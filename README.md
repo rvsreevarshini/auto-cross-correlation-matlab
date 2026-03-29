@@ -30,7 +30,7 @@ The program:
    - Auto correlation
 
   ## Output 
-  ![Output Graph](.png)
+  ![Output Graph](IMG-20260324-WA0040.jpg)
 
 ## How to Run in MATLAB
 
