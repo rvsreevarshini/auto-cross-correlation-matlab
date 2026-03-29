@@ -1,0 +1,31 @@
+# code for auto and cross correlation 
+
+clc;
+clear all;
+close all;
+x=input('enter the input sequence');
+h=input('enter the impulse sequence');
+subplot(2,2,1);
+stem(x);
+xlabel('n');
+ylabel('x(n)');
+title('input sequence');
+subplot(2,2,2);
+stem(h);
+xlabel('n');
+ylabel('h(n)');
+title('impulse sequence');
+% cross correlation
+y=xcorr(x,h);
+subplot(2,2,3);
+stem(y);
+xlabel('n');
+ylabel('y(n)');
+title('cross correlation between two sequences');
+% auto correlation
+z=xcorr(x,x);
+subplot(2,2,4);
+stem(z);
+xlabel('n');
+ylabel('z(n)');
+title('auto correlation between two sequences');
